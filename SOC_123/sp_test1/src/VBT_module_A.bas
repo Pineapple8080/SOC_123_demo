@@ -22,3 +22,36 @@ errHandler:
     If AbortTest Then Exit Function Else Resume Next
 End Function
 
+
+Public Function test2_func() As Long
+    On Error GoTo errHandler
+    
+    Dim test_R As New PinListData
+    
+    With TheHdw.PPMU.Pins("dummy_pin1")
+        .Connect
+        .ForceI -200 * uA
+        .Gate = tlOn
+        test_R = .Read(tlPPMUReadMeasurements)
+    End With
+    
+    TheExec.Flow.TestLimit resultVal:=test_R, ForceResults:=tlForceFlow
+    TheExec.Datalog.WriteComment "End of second Test"
+
+    Exit Function
+errHandler:
+    If AbortTest Then Exit Function Else Resume Next
+End Function
+
+
+Public Function doAll_enable_func() As Long
+    On Error GoTo errHandler
+    
+    TheExec.RunOption.DoAll = True
+    
+    
+    Exit Function
+errHandler:
+    If AbortTest Then Exit Function Else Resume Next
+End Function
+
