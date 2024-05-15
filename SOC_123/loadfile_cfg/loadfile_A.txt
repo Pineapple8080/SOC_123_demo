@@ -26,8 +26,8 @@
 # and we will also display datalog in a window.
 #DatalogSetupFile       ProbeDatalogSetup
 DatalogOn
-DatalogToFile		   ..\dlog\dlog_testA.txt
-DatalogToSTDF          ..\dlog\dlog_testA.std
+DatalogToFile		   ..\dlog\dlog_testA_updated.txt
+DatalogToSTDF          ..\dlog\dlog_testA_updated.std
 DatalogRetestsOn
 DatalogToWindow
 #
