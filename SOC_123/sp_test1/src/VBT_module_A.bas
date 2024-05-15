@@ -47,8 +47,8 @@ End Function
 Public Function doAll_enable_func() As Long
     On Error GoTo errHandler
     
-    TheExec.RunOption.DoAll = True
-    
+    'theexec.RunOption.DoAll = True
+    TheExec.RunOptions.DoAll = True
     
     Exit Function
 errHandler:
