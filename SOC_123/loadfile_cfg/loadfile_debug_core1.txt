@@ -25,11 +25,11 @@
 # where the job was loaded from). Retested devices will appear in the datalog,
 # and we will also display datalog in a window.
 #DatalogSetupFile       ProbeDatalogSetup
-DatalogOn
-DatalogToFile		   ..\dlog\dlog_testA_updated.txt
-DatalogToSTDF          ..\dlog\dlog_testA_updated.std
-DatalogRetestsOn
-DatalogToWindow
+#DatalogOn
+#DatalogToFile		   ..\dlog\dlog_testA_updated.txt
+#DatalogToSTDF          ..\dlog\dlog_testA_updated.std
+#DatalogRetestsOn
+#DatalogToWindow
 #
 # Now set up the contact test keywords.
 #
@@ -43,3 +43,6 @@ DatalogToWindow
 #SomePinsContact        3
 #NoPinsContact          0
 
+DatalogOn 
+DatalogToFile ..\dlog\dlog_debug_core1_061424_4621.txt 
+DatalogToSTDF ..\dlog\dlog_debug_core1_061424_4621.std 
