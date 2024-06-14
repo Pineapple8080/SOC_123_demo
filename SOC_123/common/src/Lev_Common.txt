@@ -1,0 +1,27 @@
+DTLevelSheet,version=2.1:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	Pin Levels					
+						
+	Pin/Group	Seq.	Parameter	Value	Comment	
+	TAP		Vil	=_vil_Common		
+	TAP		Vih	=_vdd_Common		
+	TAP		Vol	0		
+	TAP		Voh	0		
+	TAP		Iol	0		
+	TAP		Ioh	0		
+	TAP		Vt	0		
+	TAP		Vcl	=_Vcl_default		
+	TAP		Vch	=_Vch_default		
+	TAP		VoutLoTyp	0		
+	TAP		VoutHiTyp	0		
+	TAP		DriverMode	Largeswing-HiZ		
+	DB		Vil	=0.1*_vdd_Common		
+	DB		Vih	=_vih_Common		
+	DB		Vol	0		
+	DB		Voh	0		
+	DB		Iol	0		
+	DB		Ioh	0		
+	DB		Vt	0		
+	DB		Vcl	=_Vcl_default		
+	DB		Vch	=_Vch_default		
+	DB		VoutLoTyp	0		
+	DB		VoutHiTyp	0		
+	DB		DriverMode	Largeswing-HiZ		

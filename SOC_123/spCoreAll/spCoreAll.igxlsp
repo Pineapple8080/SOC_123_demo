@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SubProgram xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Name>spCoreAll</Name>
+  <Tester>UltraFLEX</Tester>
+  <TargetIGXLVersion>Default</TargetIGXLVersion>
+  <ExportIGXLVersion>Default</ExportIGXLVersion>
+  <CodeCaseFile />
+  <AlwaysLoad>false</AlwaysLoad>
+  <DependentSubPrograms />
+  <Code>
+    <VBModules>
+      <VBFile>
+        <Protect>false</Protect>
+        <Source>src/CoreAll_Utils.bas</Source>
+      </VBFile>
+      <VBFile>
+        <Protect>false</Protect>
+        <Source>../libMBist/src/Mbist_frmAbout.frm</Source>
+      </VBFile>
+      <VBFile>
+        <Protect>false</Protect>
+        <Source>../libMBist/src/Mbist_Utils.bas</Source>
+      </VBFile>
+      <VBFile>
+        <Protect>false</Protect>
+        <Source>../libMBist/src/VBT_tf_Mbist.bas</Source>
+      </VBFile>
+    </VBModules>
+  </Code>
+  <sheets>
+    <_sheets />
+  </sheets>
+  <refs>
+    <references>
+      <Reference>
+        <Protect>false</Protect>
+        <Copy>false</Copy>
+        <TargetLocation />
+        <Source>C:\Users\igxl\Desktop\Lab8-Solution\SOC_123\refScanDiag\ScanDiag.igxla</Source>
+        <UseRelativePath>false</UseRelativePath>
+        <Comment />
+      </Reference>
+    </references>
+  </refs>
+  <Directories>
+    <Directories />
+  </Directories>
+  <Files>
+    <Files />
+  </Files>
+  <SheetOrder>Alphabetically</SheetOrder>
+  <SheetTypeToOrder />
+  <FlowEntry>Not Specified</FlowEntry>
+  <SheetColor>-16711681</SheetColor>
+  <ExecInterposeClass>src/spCoreAll_ExecInterpose.cls</ExecInterposeClass>
+  <SaveAsXLS>false</SaveAsXLS>
+  <CompilationArguments />
+  <JobName />
+  <JobNames />
+  <PinMap />
+  <FlowGenMode>GenerateFlowFromSubPrograms</FlowGenMode>
+  <MergeFlowsMode>IncludeAllSubflows</MergeFlowsMode>
+  <MainFlow>Not Specified</MainFlow>
+  <ConcludingFlow>Not Specified</ConcludingFlow>
+  <AppendToFlow>false</AppendToFlow>
+  <GenerateJobListSheet>true</GenerateJobListSheet>
+  <GenerateExecIPModule>true</GenerateExecIPModule>
+  <GenerateSimulatedConfig>false</GenerateSimulatedConfig>
+  <IsUltraFLEXplus>false</IsUltraFLEXplus>
+  <RefConfigPath />
+  <PromptToExport>true</PromptToExport>
+  <DisableExport>false</DisableExport>
+  <ExportPassword />
+  <JobListSheetName>GeneratedJobListSheet</JobListSheetName>
+  <ReferencesSheetName>GeneratedReferencesSheet</ReferencesSheetName>
+  <ChannelMapExportMode>Pogo</ChannelMapExportMode>
+  <AllFlowSheetsEnabledForDatalogProtection>true</AllFlowSheetsEnabledForDatalogProtection>
+</SubProgram>

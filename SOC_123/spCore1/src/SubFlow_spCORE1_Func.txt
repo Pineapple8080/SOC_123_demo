@@ -1,0 +1,10 @@
+DTFlowtableSheet,version=2.2:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	Flow Table																																
+						Flow Domain:																											
+			Gate			Command				Limits		Datalog Display Results			Bin Number		Sort Number			Flag			Group				Device			Debug			
+	Label	Enable	Job	Part	Env	Opcode	Parameter	TName	TNum	LoLim	HiLim	Scale	Units	Format	Pass	Fail	Pass	Fail	Result	Pass	Fail	State	Specifier	Sense	Condition	Name	Sense	Condition	Name	Assume	Sites	Comment	
+						nop																											
+						Test	Core1_Func1	Core1 Func1	120001							5		120	Fail														
+						Test	Core1_Func2	Core1 Func2	120002							5		120	Fail														
+						Test	Core1_Func3	Core1 Func3	120003							5		120	Fail														
+						nop																											
+						return																											

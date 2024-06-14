@@ -1,2 +1,6 @@
 SOC_123/dlog/
 SOC_123/output_TP/
+SOC_123/*.xla
+SOC_123/*.xlsm
+SOC_123/*.dlex
+SOC_123/errors.txt

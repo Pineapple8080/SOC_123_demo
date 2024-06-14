@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SubProgram xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>spCore1</Name>
+  <AlwaysLoad>false</AlwaysLoad>
+  <DependentSubPrograms>
+    <SubProgramByRef>
+      <Name>spCoreAll</Name>
+      <AlwaysLoad>false</AlwaysLoad>
+      <Path>../spCoreAll/spCoreAll.igxlsp</Path>
+    </SubProgramByRef>
+  </DependentSubPrograms>
+  <Code>
+    <VBModules>
+      <VBFile>
+        <Source>src/VBT_tf_Core1_Func.bas</Source>
+      </VBFile>
+      <VBFile>
+        <Source>src/VBT_tf_Core1_MBist.bas</Source>
+      </VBFile>
+      <VBFile>
+        <Source>src/VBT_tf_Core1_Scan.bas</Source>
+      </VBFile>
+    </VBModules>
+  </Code>
+  <sheets>
+    <_sheets>
+      <Sheet>
+        <Source>src/SubFlow_spCORE1_Func.txt</Source>
+      </Sheet>
+      <Sheet>
+        <Source>src/SubFlow_spCORE1_Main.txt</Source>
+      </Sheet>
+      <Sheet>
+        <Source>src/SubFlow_spCORE1_MBist.txt</Source>
+      </Sheet>
+      <Sheet>
+        <Source>src/SubFlow_spCORE1_Scan.txt</Source>
+      </Sheet>
+      <Sheet>
+        <Source>src/TI_spCORE1.txt</Source>
+      </Sheet>
+    </_sheets>
+  </sheets>
+  <refs>
+    <references />
+  </refs>
+  <SheetOrder>Alphabetically</SheetOrder>
+  <SheetTypeToOrder />
+  <FlowEntry>spCore1: SubFlow_spCORE1_Main</FlowEntry>
+  <SheetColor>-16744448</SheetColor>
+  <ExecInterposeClass />
+  <SaveAsXLS>false</SaveAsXLS>
+  <CompilationArguments />
+  <JobName />
+  <JobNames />
+  <PinMap />
+  <MainFlow>Not Specified</MainFlow>
+  <ConcludingFlow>Not Specified</ConcludingFlow>
+  <AppendToFlow>false</AppendToFlow>
+  <GenerateJobListSheet>true</GenerateJobListSheet>
+  <GenerateExecIPModule>true</GenerateExecIPModule>
+  <CodeCaseFile />
+</SubProgram>

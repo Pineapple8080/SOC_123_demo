@@ -1,0 +1,7 @@
+DTDCSpecSheet,version=2.0:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	DC Specs								
+									
+			Selector		DCat_Gross				
+	Symbol	Value	Name	Val	Typ	Min	Max	Comment	
+	vdd_Common	=#N/A	DSel_NOM	Typ	1.8	1.5	2		
+	vih_Common	=#N/A	DSel_NOM	Typ	1.35	1.1	1.8		
+	vil_Common	=#N/A	DSel_NOM	Typ	0.45	0	0.69999999999995		

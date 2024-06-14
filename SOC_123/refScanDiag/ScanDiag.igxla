@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ExcelAddIn xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>ScanDiag</Name>
+  <Code>
+    <VBModules>
+      <VBFile>
+        <Source>src/ScanDiag_Exec_IPF.bas</Source>
+      </VBFile>
+      <VBFile>
+        <Source>src/ScanDiag_Utils.bas</Source>
+      </VBFile>
+    </VBModules>
+  </Code>
+  <References>
+    <references />
+  </References>
+  <CodeCaseFile />
+</ExcelAddIn>

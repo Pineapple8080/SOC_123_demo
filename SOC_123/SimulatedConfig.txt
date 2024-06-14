@@ -1,118 +1,42 @@
-# Jaguar IG-XL hardware configuration
-# This file contains an example hardware configuration, and
-# is used as the default offline.
-
-<Version>
+<VERSION>
 1
-</Version>
+</VERSION>
+
+
+#slot[.subslot] Type        idprom (type serial rev company)
 
 <TEST_HEAD TH 1>
-###
-### Default offline configuration:
-###
-#slot[.subslot] Type            idprom (type serial rev company)
--1.0        dib                 239-001-00 0000000 0000-A 0000
-1.0         HSD-M               979-219-00 0000000 0000-A 0000
-            HSD-M               956-361-00 0000000 0000-A 0000
 
-2.0         HSS-6400            974-338-02 0000000 0000-A 0000
-            HSS-6400            956-422-01 0000000 0000-A 0000
-            PowerBoard          956-426-00 0000000 0000-A 0000
-            PSP                 956-308-00 0000000 0000-B 0000
-            Clock               956-423-01 0000000 0000-B 0000
-            TxRx0               956-424-01 0000000 0000-B 0000
-            TxRx1               956-424-01 0000000 0000-B 0000
-            TxRx2               956-424-01 0000000 0000-B 0000
-            TxRx3               956-424-01 0000000 0000-B 0000
+16.0   HSD-U               604-356-00 900cb30 1017-A 5445
+      HSD-U               601-132-00 30514ae 0942-A 5445
+      PowerBoard          601-135-00 3051495 1014-A 5445
+      ChanBoard0          601-130-00 3052d48 1017-A 5445
+      ChanBoard1          601-130-00 3052d47 1017-A 5445
 
-3.0         HSD-I               974-242-00 0000000 0000-A 0000
-            HSD-I               956-128-00 0000000 0000-A 0000
-            PowerBoard		956-126-00 0000000 0000-A 0000
-            ChanBoard0		956-124-00 0000000 0000-A 0000
-            ChanBoard1		956-124-00 0000000 0000-A 0000
+18.0		DC-07		604-375-02 0C164FCE 1150-A 5445
+		aka: 604-375-00
+   		DC-07		939-420-01 0C16E272 1150-A 5445
+		aka: 939-420-00
+   		DC-07Rider-0		604-534-02 0C16C06D 1113-A 5445
+		aka: 604-534-00
+   		DC-07Rider-1		610-617-02 0C16E217 1113-A 5445
+		aka: 610-617-00
+   		DC-07Power		608-807-01 0C16C080 1102-A 5445
+		aka: 608-807-00
 
-4.0         Turbo-Base          974-215-00 0000000 0000-A 0000  
-            Turbo-Base          956-078-00 0000000 0000-A 0000
-            PowerBoard          949-984-01 0000000 0000-A 0000
-            Turbo-BaseRider     949-987-02 0000000 0000-A 0000
-
-5.0         Turbo-Frame         974-213-00 0000000 0000-A 0000
-            Turbo-Frame         939-367-00 0000000 0000-A 0000
-            PowerBoard          939-364-00 0000000 0000-A 0000
-            Turbo-CC-1          939-321-00 0000000 0000-A 0000
-            Turbo-CC-2          939-321-00 0000000 0000-A 0000
-5.1         Turbo-SIM           974-228-00 0000000 0000-A 0000
-            Turbo-SIM           939-366-00 0000000 0000-A 0000
-
-6.0         GigaDigHD2          805-007-00 0000000 0000-A 0000
-            GigaDigHD2          956-436-00 0000000 0000-A 0000
-
-7.0         GigaDigHD1          805-007-10 0000000 0000-A 0000
-            GigaDigHD1          956-436-00 0000000 0000-A 0000
-
-8.0         AWG6G               805-008-00 0000000 0000-A 0000
-            AWG6G               956-445-00 0000000 0000-A 0000
-
-9.0         HSD-U               604-356-01 0000000 0000-A 0000
-            HSD-U               612-073-00 0000000 0000-A 0000
-            PowerBoard          608-808-00 0000000 0000-A 0000
-            ChanBoard0          613-493-00 0000000 0000-A 0000
-            ChanBoard1          613-493-00 0000000 0000-A 0000
-
-10.0        HSD-4G              974-245-10 0000000 0000-A 0000
-            HSD-4G              956-128-01 0000000 0000-A 0000
-            PowerBoard          956-462-00 0000000 0000-A 0000
-            ChanBoard0          956-160-00 0000000 0000-A 0000
-            ChanBoard1          956-160-00 0000000 0000-A 0000
-
-11.0        HSS-10G             974-245-20 0000000 0000-A 0000
-            HSS-10G             956-128-02 0000000 0000-A 0000
-            PowerBoard          956-462-10 0000000 0000-A 0000
-            ChanBoard0          956-160-10 0000000 0000-A 0000
-            ChanBoard1          956-160-10 0000000 0000-A 0000
-
-14.0        HexVS               974-294-00 0000000 0000-A 0000
-            HexVS               939-265-00 0000000 0000-A 0000
-
-16.0        DC-30               805-002-00 0000000 0000-A 0000
-            DC-30               949-901-00 0000000 0000-A 0000
-
-18.0        DCIOBoard           974-390-01 0000000 0000-A 0000
-            DCIOBoard           956-448-00 0000000 0000-A 0000
-
-21.0        VSM                 974-296-00 0000000 0000-A 0000
-            VSM                 956-361-00 0000000 0000-A 0000
-
-22.0        BBAC-15             979-214-00 0000000 0000-A 0000
-            BBAC-15             956-375-00 0000000 0000-A 0000
-
-#23.0        TTBoard             979-214-00 0000000 0000-A 0000
-#            TTBoard             956-375-00 0000000 0000-A 0000
-
-# Master support board:
-24.0        SupportBoard        974-220-12 0000000 0000-A 0000
-            SupportBoard        956-354-00 0000000 0000-A 0000
-
-# Slave support board:
-25.0        SupportBoard        979-220-01 0000000 0000-A 0000
-            SupportBoard        956-354-01 0000000 0000-A 0000
-
-# Master distribution board, 12 and 24 slot systems:
-62.0       DistributionBoard    956-355-00 0000000 0000-A 0000
-           DistributionBoard    956-355-00 0000000 0000-A 0000
-
-# Slave distribution board, 24-slot system:
-63.0       DistributionBoard    956-355-00 0000000 0000-A 0000
-           DistributionBoard    956-355-00 0000000 0000-A 0000
-
-###
-### Example entries for other boards:
-###
-
-# Master and slave distribution boards, 36-slot system:
-#62.0       DistributionBoard   956-356-00 0000000 0000-A 0000
-#           DistributionBoard   956-356-00 0000000 0000-A 0000
-#63.0       DistributionBoard   956-356-00 0000000 0000-A 0000
-#           DistributionBoard   956-356-00 0000000 0000-A 0000
-
+24.0  SupportBoard        974-221-02 0000000 0434-A 5445
+      SupportBoard        956-416-00 0000000 0434-A 5445
+      PowerBoard      956-359-10 0000000 0429-C 21573
+      TCM     956-419-01 0000000 0450-B 5445
+      XGEM        956-364-00 0000000 0336-A 5445
+      DCCM        949-938-02 0000000 0529-B 5445
+25.0  SupportBoard        974-221-01 0000000 0510-A 5445
+      SupportBoard        956-416-01 0000000 0434-A 5445
+      PowerBoard      956-359-11 0000000 0429-C 21573
+      XGEM        956-364-00 0000000 0336-A 21573
+62.0  DistributionBoard   956-455-00 300a37c 0514-A 5445
+      DistributionBoard   956-455-00 300a37c 0514-A 5445
+63.0  DistributionBoard   956-455-00 300a382 0514-A 5445
+      DistributionBoard   956-455-00 300a382 0514-A 5445
 </TEST_HEAD TH 1>
+

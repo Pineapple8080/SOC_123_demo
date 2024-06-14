@@ -1,0 +1,148 @@
+digital_inst = hsdm;
+opcode_mode = single;
+cdl_cache = yes;
+compressed = no;
+//
+import tset ts_Common;
+
+scan_type = Parallel;
+		 	
+scan_pins = {
+     DB0,
+     DB1,
+     DB2,
+     DB3
+} 
+vm_vector Core1_ScanFlush_vm ( $tset, TAP, DB )
+{
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+scan 32 
+        (si DB0:S > 00000000000000000000000000000000) 
+        (so DB1:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+        (si DB2:S > 00000000000000000000000000000000) 
+        (so DB3:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+scan 32 
+        (si DB0:S > 11111111111111111111111111111111) 
+        (so DB1:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+        (si DB2:S > 11111111111111111111111111111111) 
+        (so DB3:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+scan 32 
+        (si DB0:S > 00000000000000000000000000000000) 
+        (so DB1:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+        (si DB2:S > 00000000000000000000000000000000) 
+        (so DB3:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+scan 32 
+        (si DB0:S > 11111111111111111111111111111111) 
+        (so DB1:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+        (si DB2:S > 11111111111111111111111111111111) 
+        (so DB3:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+scan 32 
+        (si DB0:S > 00000000000000000000000000000000) 
+        (so DB1:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+        (si DB2:S > 00000000000000000000000000000000) 
+        (so DB3:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+scan 32 
+        (si DB0:S > 11111111111111111111111111111111) 
+        (so DB1:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+        (si DB2:S > 11111111111111111111111111111111) 
+        (so DB3:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+scan 32 
+        (si DB0:S > 00000000000000000000000000000000) 
+        (so DB1:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+        (si DB2:S > 00000000000000000000000000000000) 
+        (so DB3:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+scan 32 
+        (si DB0:S > 11111111111111111111111111111111) 
+        (so DB1:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+        (si DB2:S > 11111111111111111111111111111111) 
+        (so DB3:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+ > ts_Common 0000 0000; 
+scan 32 
+        (si DB0:S > 00000000000000000000000000000000) 
+        (so DB1:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+        (si DB2:S > 00000000000000000000000000000000) 
+        (so DB3:S > LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+scan 32 
+        (si DB0:S > 11111111111111111111111111111111) 
+        (so DB1:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+        (si DB2:S > 11111111111111111111111111111111) 
+        (so DB3:S > HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH) 
+ ; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common XXXX XXXX; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+ > ts_Common 0000 1111; 
+}

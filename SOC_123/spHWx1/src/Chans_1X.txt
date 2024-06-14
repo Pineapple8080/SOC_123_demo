@@ -1,0 +1,14 @@
+DTChanMap,version=2.4:platform=Jaguar:toprow=-1:leftcol=-1:rightcol=-1	Channel Map									
+										
+	DIB ID:			View Mode:	Signal		Site Replication:		USL Tag:	
+										
+	Device Under Test		Tester Channel							
+	Pin Name	Package Pin	Type	Site 0	Comment					
+	TMS		I/O	16.ch0						
+	TCK		I/O	16.ch1						
+	TDI		I/O	16.ch2						
+	TDO		I/O	16.ch3						
+	DB0		I/O	16.ch4						
+	DB1		I/O	16.ch5						
+	DB2		I/O	16.ch6						
+	DB3		I/O	16.ch7						
