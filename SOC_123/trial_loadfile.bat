@@ -2,6 +2,8 @@
 
 SET JobName=debug_core1
 
+::skip due to the relative path from test program to pattern.
+goto start_label
 ::setup the directory used to save the test program (.xlsm)
 ::and copy the simulatedconfig file into the folder (overwrite)
 SET TPFolder=.\output_TP
@@ -25,6 +27,7 @@ IF not exist %DlogFolder% (
 	echo folder %DlogFolder% exist
 )
 
+:start_label
 ::copy the loadfile_t.txt to loadfile_JobName.txt
 ::appand the dlog setup into loadfile_JobName.txt
 ::dlog format: dlog_jobname_ddmmyy_minhr.txt/std
@@ -37,13 +40,13 @@ echo MIN = %MIN%
 echo HR = %HR%
 COPY .\loadfile_cfg\loadfile_t.txt .\loadfile_cfg\loadfile_%JobName%.txt
 echo DatalogOn >> .\loadfile_cfg\loadfile_%JobName%.txt
-echo DatalogToFile ..\dlog\dlog_%JobName%_%DD%%MM%%YY%_%MIN%%HR%.txt >> .\loadfile_cfg\loadfile_%JobName%.txt
-echo DatalogToSTDF ..\dlog\dlog_%JobName%_%DD%%MM%%YY%_%MIN%%HR%.std >> .\loadfile_cfg\loadfile_%JobName%.txt
+echo DatalogToFile .\dlog\dlog_%JobName%_%DD%%MM%%YY%_%MIN%%HR%.txt >> .\loadfile_cfg\loadfile_%JobName%.txt
+echo DatalogToSTDF .\dlog\dlog_%JobName%_%DD%%MM%%YY%_%MIN%%HR%.std >> .\loadfile_cfg\loadfile_%JobName%.txt
 
-IGLinkCL -i SOC_123.igxlProj ^
+IGLinkCL -i .\SOC_123.igxlProj ^
 		-j %JobName% ^
-		-e %TPFolder%\%JobName%.xlsm ^
-		-f .\loadfile_cfg\loadfile_A.txt ^
+		-e .\%JobName%.xlsm ^
+		-f .\loadfile_cfg\loadfile_%JobName%.txt ^
 		-r -v -o
 
 cmd /k
