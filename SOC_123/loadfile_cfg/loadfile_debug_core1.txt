@@ -44,5 +44,5 @@
 #NoPinsContact          0
 
 DatalogOn 
-DatalogToFile .\dlog\dlog_debug_core1_061424_0822.txt 
-DatalogToSTDF .\dlog\dlog_debug_core1_061424_0822.std 
+DatalogToFile .\dlog\dlog_debug_core1_061724_12 0.txt 
+DatalogToSTDF .\dlog\dlog_debug_core1_061724_12 0.std 

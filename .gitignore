@@ -5,3 +5,5 @@ SOC_123/*.xlsm
 SOC_123/*.dlex
 SOC_123/errors.txt
 SOC_123/LicenseRequirements.txt
+SOC_123/loadfile_cfg/*.txt
+!SOC_123/loadfile_cfg/loadfile_t.txt

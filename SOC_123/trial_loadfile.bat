@@ -16,6 +16,7 @@ IF not exist %TPFolder% (
 )
 echo copy simulatedconfig to %TPFolder% folder
 COPY SimulatedConfig.txt %TPFolder%	
+:start_label
 
 ::setup the directory used to save the dlog
 echo check whether folder dlog exist or not
@@ -27,7 +28,6 @@ IF not exist %DlogFolder% (
 	echo folder %DlogFolder% exist
 )
 
-:start_label
 ::copy the loadfile_t.txt to loadfile_JobName.txt
 ::appand the dlog setup into loadfile_JobName.txt
 ::dlog format: dlog_jobname_ddmmyy_minhr.txt/std
@@ -47,6 +47,6 @@ IGLinkCL -i .\SOC_123.igxlProj ^
 		-j %JobName% ^
 		-e .\%JobName%.xlsm ^
 		-f .\loadfile_cfg\loadfile_%JobName%.txt ^
-		-r -v -o
+		-r -v
 
 cmd /k
