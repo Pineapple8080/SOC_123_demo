@@ -27,10 +27,6 @@
       </VBFile>
     </VBModules>
   </Code>
-  <VbaRefs>
-    <references />
-  </VbaRefs>
-  <LstVbNetProject />
   <sheets>
     <_sheets />
   </sheets>
@@ -40,11 +36,9 @@
         <Protect>false</Protect>
         <Copy>false</Copy>
         <TargetLocation />
-        <Source>C:\Users\ter\Desktop\trial_1\SOC_123\refScanDiag\ScanDiag.igxla</Source>
-        <UseRelativePath>false</UseRelativePath>
+        <Source>..\refScanDiag\ScanDiag.igxla</Source>
+        <UseRelativePath>true</UseRelativePath>
         <Comment />
-        <ProjectSource />
-        <ProtectDependencies>false</ProtectDependencies>
       </Reference>
     </references>
   </refs>
