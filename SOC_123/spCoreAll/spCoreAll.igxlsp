@@ -36,8 +36,8 @@
         <Protect>false</Protect>
         <Copy>false</Copy>
         <TargetLocation />
-        <Source>..\refScanDiag\ScanDiag.igxla</Source>
-        <UseRelativePath>true</UseRelativePath>
+        <Source>C:\Users\igxl\.jenkins\workspace\SOC123_trial\SOC_123\refScanDiag\ScanDiag.igxla</Source>
+        <UseRelativePath>false</UseRelativePath>
         <Comment />
       </Reference>
     </references>
